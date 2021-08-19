@@ -1,0 +1,245 @@
+*{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+main .container{
+    background-color: rgb(68, 66, 66);
+    word-wrap: break-word;
+    width: 780px;
+    border-radius: 30px;
+}
+
+.mainText{
+    color: rgb(184, 184, 184);
+    font-weight: 600;
+    line-height: 35px;
+    background-color: black;
+}
+
+img{
+    border-radius: 50%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+
+}
+
+.iconCont{
+    height: 35px;
+    width: 35px;
+    background-color: rgb(68, 66, 66);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.iconCont:hover{
+    transform: translateY(-5px);
+}
+
+.linkcard{
+    width: auto;
+    height: 45px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+}
+.myLink{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(320deg);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.myLinkConnect{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.fixedHeader{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+}
+
+.headerText{
+    position: absolute;
+    left: 10%;
+    bottom: 12%;
+}
+
+
+.menuBtn{
+    cursor: pointer;
+}
+
+
+.mainConnectCont{
+    margin-top: 100px;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: rgb(29, 29, 29);
+    position: relative;
+}
+.connectText{
+    color: white;
+}
+
+.imgCont{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -7%;
+    right: 40%;
+    margin-bottom: 20%;
+}
+
+.closeBtn{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 12px;
+    right: 24px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.closeBtn::after, .closeBtn::before{
+    width: 100%;
+    height: 2px;
+    background-color: #ffff;
+    position: absolute;
+    content: "";
+    left: 0;
+}
+
+.closeBtn::after{
+    transform: rotate(90deg);
+}
+
+
+.showMenu{
+    display: block;
+}
+
+a{
+color: rgb(184, 184, 184);
+text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+.changeCont{
+    position: relative;
+    z-index: 1;
+    
+}
+
+.backgroundChange{
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.headerDark{
+    color: white;
+}
+
+.mainContBackground{
+    background-color: black;
+}
+
+.headerText{
+    color: white;
+}
+
+
+.headeradd{
+    color: red;
+}
+
+.container .zuri a{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+
+ @media all and (max-width:300px),(max-width:480px),(max-width:600px),(max-width:768px){
+
+    .mainHeader{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .headerText{
+        position: absolute;
+        left: 23%;
+        bottom: 12%;
+    }
+
+    .mainLinkCard{
+        font-size: 12px;
+    }
+    .skillHeader,.workHeader{
+        font-size: 18px;
+    }
+
+  
+
+
+
+} 
